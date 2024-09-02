@@ -1,6 +1,7 @@
 docker run \
   --name db-glpi-10 \
   --network glpi \
+  -p 3306:3306 \
   -e MYSQL_ROOT_PASSWORD=SENHAROOT \
   -e MYSQL_DATABASE=glpi \
   -e MYSQL_USER=glpi \
