@@ -1,0 +1,13 @@
+docker run \
+  --name glpi-10 \
+  --network glpi \
+  -p 80:80 \
+  -v /data/glpi-10/glpi/documents:/var/lib/glpi/files/data-documents \
+  -v /data/glpi-10/glpi/marketplace:/var/lib/glpi/marketplace \
+  -v /data/glpi-10/glpi/imagens-custom:/usr/share/glpi/pics/imagens-custom \
+  -v /data/glpi-10/glpi/plugins:/usr/share/glpi/plugins \
+  -v /data/glpi-10/glpi/files/_pictures:/var/lib/glpi/files/_pictures \
+  -v /data/glpi-10/glpi/files/_plugins:/var/lib/glpi/files/_plugins \
+  -v /data/glpi-10/glpi/etc:/etc/glpi/ \
+  -v /data/glpi-10/backup:/backup/ \
+  -d tauanslima/glpi:10.0.16
