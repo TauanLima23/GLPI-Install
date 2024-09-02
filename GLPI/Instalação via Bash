@@ -5,7 +5,7 @@ glpi-console glpi:database:install \
   -H db-glpi-10 \
   -d glpi \
   -u glpi \
-  -p GLP1_MySQL@10 \
+  -p SENHADATABASE \
   --no-telemetry \
   --force \
   -n && \
